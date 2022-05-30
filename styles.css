@@ -1,0 +1,191 @@
+/* Criando Variáveis no CSS */
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #c0c0c0;
+    --botao-azul: #167BF7;
+    --botao-azul-efeito: #17a34a;
+    --cor-de-fundo: #00030C;
+    --fonte-principal: 'Inter';
+
+}
+
+/* Alterando o Corpo do site */
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* O seletor pega todos os elementos do html e aplica as propriedades determinadas pelo dev*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Alterando a section PRINCIPAL do site*/
+.principal {
+    background-image: url("imagens/Background.png");
+    background-repeat: no-repeat;
+    background-size: container;
+    align-items: center;
+    text-align: center;
+}
+
+/* Configurando o container */
+.container {
+    height: 100vh; /*vh - view height port*/
+    display: grid;
+    grid-template-columns: 50% 50%;                 /* Separação das colunas do site */
+}
+
+/* Configurando a div principal */
+.container__caixa {
+    margin: 0 6em;
+}
+
+/* Configurando o título */
+.container__titulo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+/* Configurando a imagem do Alura+ e Alura Linguas */
+.container__imagem {
+    margin: 1em 0 2em 0;        /* margin-top margin-right margin-bottom margin-left */
+}
+
+/* Configurando os botões */
+.container__botao {
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+/* Configurando o botão para quando passarmos o mouse por cima dele */
+.container__botao:hover {
+    background-color: var(--botao-azul-efeito);
+    color: var(--cor-de-fundo);
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+
+/* Configurando o aviso abaixo dos botões */
+.container__aviso {
+    font-size: 12px;
+    color: var(--cinza-secundario);
+}
+
+
+/* Alterando as sections SECUNDÁRIAS do site*/
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+
+/* Alterando a imagem secundária */
+.secundario__imagem {
+    width: 80%;
+}
+
+/* Alterando o titulo da página*/
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
+}
+
+/* Alterando a descrição */
+.descricao__texto {
+    color: var(--cinza-secundario)
+}
+
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container__descricao {
+    padding: 2em;
+}
+
+
+/* Alterando a página de dispositivos */
+
+/* Alterando as propriedades da section dispositivos */
+.dispositivos {
+    text-align: center;
+}
+
+/* Alterando o título da página de dispositivos */
+.dispositivos__titulo {
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Ajustando os elementos da lista */
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+/* Ajustando os textos da lista */
+.lista__item {
+    font-size: 32px;
+    color: var(--branco-principal);
+}
+
+/* Configurando o FOOTER */
+.rodape {
+    text-align: center;
+    margin: 5em 3em;
+}
+
+/* Ajustando os textos de copyright */
+.rodape__copy {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    margin: 2em 0;
+    color: var(--cinza-secundario);
+}
+
+/* Alterando a lista */
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 1em;
+}
+
+/* Alterando os elementos âncora da lista*/
+.lista__link a{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--cinza-secundario);
+    padding: 0.5em;
+    text-decoration: none;
+}
+
+/* Mudando a cor do "botão" quando passamos o cursor por cima dele*/
+.lista__link a:hover {
+    color: var(--botao-azul);
+}
+
+/* Alterando a cor do "botão" quando clicamos e seguramos ele*/
+.lista__link a:active {
+    color: green;
+}
+
